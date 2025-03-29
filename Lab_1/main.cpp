@@ -1,6 +1,9 @@
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
+
+//----------------- EJERCICIOS -----------------//
 
 /// EJERCICIO 2
 
@@ -185,14 +188,179 @@ using namespace std;
 
 
 /// EJERCICIO 20
-int main()
-{
-    int nalrevez = 0;
-    int n = 0;
+// int main()
+// {
+//     int n;
+//     cout << "Ingrese un numero: ";
+//     cin >> n;
+
+//     string Nstr = to_string(n);
+//     string Nrev = string(Nstr.rbegin(), Nstr.rend());
+
+//     if (Nstr == Nrev) {
+//         cout << n << " es un número palíndromo" << endl ;
+//     } else {
+//         cout << n << " NO es un número palíndromo" << endl;
+//     }
+
+//     return 0;
+// }
 
 
-    return 0;
-}
+/// EJERCICIO 22
+// int main()
+// {
+//     int n;
+
+//     int hora;
+//     int min;
+//     int seg;
+
+//     cout << "Ingrese un numero: ";
+//     cin >> n;
+
+
+//     hora = n / 3600;
+//     min = (n - (hora * 3600)) / 60;
+//     seg = n - ((hora * 3600) + (60 * min));
+
+
+//     cout << hora << ":" << min << ":" << seg << endl;
+
+//     return 0;
+// }
+
+
+/// EJERCICIO 24
+// int main()
+// {
+//     int n;
+
+//     cout << "Ingrese un numero: ";
+//     cin >> n;
+
+//     for(int i = 0; i < n; i++)
+//     {
+//         for(int j = 0; j < n; j++)
+//         {
+//             if(i == 0 || i == n-1 || j == 0 || j == n-1){
+//                 cout << "*";
+//             }
+//             else{
+//                 cout << " ";
+//             }
+//         }
+
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+
+/// EJERCICIO 26
+// int main()
+// {
+//     int a;
+//     int b;
+//     int c;
+
+//     cout << "Ingrese un numero l1: ";
+//     cin >> a;
+
+//     cout << "Ingrese un numero l2: ";
+//     cin >> b;
+
+//     cout << "Ingrese un numero l3: ";
+//     cin >> c;
+
+//     if(!(a + b > c && a + c > b && b + c > a)){
+//         cout << "Las longitudes ingresadas no forman un triangulo" << endl;
+//         return 0;
+//     }
+
+
+//     if(a == b && b == c){
+//         cout << "Se forma un triangulo equilatero" << endl; 
+//     }
+//     else if (a == b || b == c || a == c){
+//         cout << "Se forma un triangulo isosceles" << endl;
+//     }
+//     else{
+//         cout << "Se forma un triangulo escaleno" << endl;
+//     }
+
+
+
+//     return 0;
+// }
+
+
+/// EJERCICIO 28
+// int main()
+// {
+//     float n;
+//     double pi = 0.0;
+
+//     cout << "Ingrese un numero l1: ";
+//     cin >> n;
+
+    
+//     for(int i = 0, j = 1; i < n; i++, j += 2)
+//     {
+//         if (i % 2 == 0) 
+//         {pi += 1.0 /j;}
+//         else {pi -= 1.0 /j;}
+//     }
+
+//     pi *= 4;
+
+
+//     cout << "pi es aproximadamente: " << pi << endl;
+
+//     return 0;
+// }
+
+
+/// EJERCICIO 30
+// int main()
+// {
+//     srand(time(0));
+
+//     int n = -1;
+
+//     int numero = rand() % 101;
+
+
+//     while (n != numero)
+//     {
+//         cout << "\nAdivina el numero del 0 al 100: ";
+//         cin >> n;
+
+//         if(n > numero){
+//             cout << n << " es MAYOR que el numero que buscas" << endl;
+//         }
+//         else{
+//             cout << n << " es MENOR que el numero que buscas" << endl;
+//         }
+//     }
+
+
+//     cout << "Adivinaste el numero." << endl;
+
+
+//     return 0;
+// }
+
+
+//----------------- PROBLEMAS -----------------//
+
+
+
+/// PROBLEMA 2
+
+
+
 
 
 
