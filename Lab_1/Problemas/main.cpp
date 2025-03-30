@@ -260,8 +260,73 @@ using namespace std;
 
 
 /// PROBLEMA 14
-int main(){
-    int maxPalindromo;
-    int n1, n2;
+// int main(){
+//     int maxPalindromo = 0;
+//     int n1 = 0, n2 = 0;
 
-}
+
+//     for(int i = 100; i <= 999; i++)
+//     {
+//         for(int j = i; j <= 999; j++)
+//         {
+//             int reverso = 0;
+//             int producto = i * j;
+//             int num = producto;
+
+//             while(num > 0){
+//                 int digito = num % 10;
+//                 reverso = reverso * 10 + digito;
+//                 num /= 10;
+//             }
+
+//             if((producto == reverso) && producto > maxPalindromo) {
+//                 maxPalindromo = producto;
+//                 n1 = i;
+//                 n2 = j;
+//             } 
+
+
+//         }
+//     }
+
+
+//     cout << n1 << "*" << n2 << "=" << maxPalindromo << endl;
+
+// }
+
+
+/// PROBLEMA 16
+// int main(){
+//     int k;
+//     cout << "Ingrese un valor para k: ";
+//     cin >> k;
+
+//     int longitudMax = 0;
+//     int mejorSemilla = 0;
+
+//     for (int i = 1; i < k; ++i){
+//         int n = i;
+//         int longitud = 0;
+
+//         // cout << "Serie para " << i << ": ";
+//         while(n != 1) {
+//             // cout << n << " ";
+//             if(n % 2 == 0) n /= 2;
+//             else n = 3 * n + 1;
+
+//             longitud++;
+//         }
+
+//         // cout << "1" << endl;
+//         longitud++;
+
+//         if (longitud > longitudMax){
+//             longitudMax = longitud;
+//             mejorSemilla = i;
+//         }
+
+//     }
+
+//     cout << "\n La serie mas larga es con la semilla: " << mejorSemilla << ", teniendo " << longitudMax << " terminos." << endl;
+
+// }
