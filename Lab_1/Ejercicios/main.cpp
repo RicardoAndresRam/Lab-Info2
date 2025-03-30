@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//----------------- EJERCICIOS -----------------//
+//----------------- EJERCICIOS LABORATORIO 1 -----------------//
 
 /// EJERCICIO 2
 
@@ -351,14 +351,6 @@ using namespace std;
 
 //     return 0;
 // }
-
-
-//----------------- PROBLEMAS -----------------//
-
-
-
-/// PROBLEMA 2
-
 
 
 
