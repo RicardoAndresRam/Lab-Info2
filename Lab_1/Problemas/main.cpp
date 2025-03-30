@@ -76,50 +76,117 @@ using namespace std;
 
 
 /// PROBLEMA 4
-int main()
-{   
-    int hora1;
-    int minutosH1; 
-    int horaH1;
+// int main()
+// {   
+//     int hora1;
+//     int minutosH1; 
+//     int horaH1;
 
 
-    int hora2;
-    int minutosH2; 
-    int horaH2;
+//     int hora2;
+//     int minutosH2; 
+//     int horaH2;
 
-    cout << "Ingrese una hora: ";
-    cin >> hora1;
-
-
-    minutosH1 = hora1 % 100;
-    horaH1 = hora1 / 100;
-
-    if(!(horaH1 >= 0 && horaH1 < 24 && minutosH1 >= 0 && minutosH1 < 60)){
-        cout << hora1 << " es un tiempo invalido" << endl;
-        return 0;
-    }
-
-    cout << "Ingrese la duracion: ";
-    cin >> hora2;
-
-    minutosH2 = hora2 % 100;
-    horaH2 = hora2 / 100;
-
-    if(!(horaH2 >= 0 && minutosH2 >= 0 && minutosH2 < 60)){
-        cout << hora2 << " es una duracion invalida" << endl;
-        return 0;
-    }
+//     cout << "Ingrese una hora: ";
+//     cin >> hora1;
 
 
-    int minutosTotalesHora1 = (horaH1 * 60) + minutosH1;
-    int minutosTotalesHora2 = (horaH2 * 60) + minutosH2;
+//     minutosH1 = hora1 % 100;
+//     horaH1 = hora1 / 100;
 
-    int totalMinutos = (minutosTotalesHora1 + minutosTotalesHora2) % 1440;
+//     if(!(horaH1 >= 0 && horaH1 < 24 && minutosH1 >= 0 && minutosH1 < 60)){
+//         cout << hora1 << " es un tiempo invalido" << endl;
+//         return 0;
+//     }
 
-    int resultado = (totalMinutos / 60) * 100 + (totalMinutos % 60);
+//     cout << "Ingrese la duracion: ";
+//     cin >> hora2;
+
+//     minutosH2 = hora2 % 100;
+//     horaH2 = hora2 / 100;
+
+//     if(!(horaH2 >= 0 && minutosH2 >= 0 && minutosH2 < 60)){
+//         cout << hora2 << " es una duracion invalida" << endl;
+//         return 0;
+//     }
+
+
+//     int minutosTotalesHora1 = (horaH1 * 60) + minutosH1;
+//     int minutosTotalesHora2 = (horaH2 * 60) + minutosH2;
+
+//     int totalMinutos = (minutosTotalesHora1 + minutosTotalesHora2) % 1440;
+
+//     int resultado = (totalMinutos / 60) * 100 + (totalMinutos % 60);
 
     
-    cout << "La hora es " << resultado << endl;
+//     cout << "La hora es " << resultado << endl;
 
-    return 0;
+//     return 0;
+// }
+
+
+/// PROBLEMA 6
+// int main(){
+
+//     float euler = 0;
+//     int n;
+
+//     cout << "Escribe la precicion de euler: ";
+//     cin >> n;
+
+    
+//     for(int i = 0; i < n; i++)
+//     {
+//         int factorial = 1;
+//         for(int j = 1; j <= i; j++)
+//         {
+//             factorial *= j;
+//         }
+
+//         euler += 1.0f / factorial; 
+//     }
+
+//     cout << "e es aproximadamente: " << euler << endl;
+// }
+
+
+/// PROBLEMA 8
+int main(){
+    int sumatoria = 0;
+    int a, b, c;
+
+    cout << "Ingrese el valor de a: ";
+    cin >> a;
+
+    cout << "Ingrese el valor de b: ";
+    cin >> b;
+
+    cout << "Ingrese el valor de c: ";
+    cin >> c;
+
+
+    for (int i = a; i < c; i += a)
+    {
+        sumatoria += i;
+
+        cout << i << " + ";
+    }
+
+
+    for (int i = b; i < c; i += b)
+    {
+        if(i % a != 0){
+            sumatoria += i;
+
+            cout << i;
+
+            if((i + b < c))
+            {
+                cout << " + ";
+            }
+        }
+    }
+
+    cout << " = " << sumatoria << endl;
+    
 }
