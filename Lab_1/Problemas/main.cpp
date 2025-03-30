@@ -151,42 +151,112 @@ using namespace std;
 
 
 /// PROBLEMA 8
+// int main(){
+//     int sumatoria = 0;
+//     int a, b, c;
+
+//     cout << "Ingrese el valor de a: ";
+//     cin >> a;
+
+//     cout << "Ingrese el valor de b: ";
+//     cin >> b;
+
+//     cout << "Ingrese el valor de c: ";
+//     cin >> c;
+
+
+//     for (int i = a; i < c; i += a)
+//     {
+//         sumatoria += i;
+
+//         cout << i << " + ";
+//     }
+
+
+//     for (int i = b; i < c; i += b)
+//     {
+//         if(i % a != 0){
+//             sumatoria += i;
+
+//             cout << i;
+
+//             if((i + b < c))
+//             {
+//                 cout << " + ";
+//             }
+//         }
+//     }
+
+//     cout << " = " << sumatoria << endl;
+    
+// }
+
+
+/// PROBLEMA 10
+// int main(){
+//     int primo = 1;
+//     int n;
+
+//     cout << "Ingrese un numero: ";
+//     cin >> n;
+
+//     for(int i = 0; i < n;)
+//     {
+//         primo++;
+
+//         if(primo < 2) continue;
+
+//         bool esPrimo = true;
+//         for (int j = 2; j * j <= primo; j++) {
+//             if (primo % j == 0) {
+//                 esPrimo = false;
+//                 break;
+//             }
+//         }
+
+//         if(!esPrimo) continue;
+
+//         i++;
+//     }
+
+//     cout << "El primo numero " << n << " es: " << primo << endl;
+
+    
+// }
+
+
+/// PROBLEMA 12
 int main(){
-    int sumatoria = 0;
-    int a, b, c;
+    int maxPrimo;
+    int primo;
+    int n;
 
-    cout << "Ingrese el valor de a: ";
-    cin >> a;
+    cout << "Ingrese un numero: ";
+    cin >> n;
 
-    cout << "Ingrese el valor de b: ";
-    cin >> b;
+    primo = n;
 
-    cout << "Ingrese el valor de c: ";
-    cin >> c;
-
-
-    for (int i = a; i < c; i += a)
-    {
-        sumatoria += i;
-
-        cout << i << " + ";
+    while(primo % 2 == 0) {
+        maxPrimo = 2;
+        primo /= 2;
     }
 
 
-    for (int i = b; i < c; i += b)
-    {
-        if(i % a != 0){
-            sumatoria += i;
-
-            cout << i;
-
-            if((i + b < c))
-            {
-                cout << " + ";
-            }
+    for (int i = 3; i * i <= primo; i+= 2) {
+        while (primo % i == 0) {
+            maxPrimo = i;
+            primo /= i;
         }
     }
 
-    cout << " = " << sumatoria << endl;
+    if(primo > 2)
+    {
+        maxPrimo = primo;
+    }
+
+
+    cout << "El mayor factor primo de " << n << " es: " << maxPrimo << endl;
+
     
 }
+
