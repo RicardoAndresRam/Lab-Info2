@@ -194,14 +194,22 @@ using namespace std;
 //     cout << "Ingrese un numero: ";
 //     cin >> n;
 
-//     string Nstr = to_string(n);
-//     string Nrev = string(Nstr.rbegin(), Nstr.rend());
+//     int num = n;
+//     int reverso = 0;
 
-//     if (Nstr == Nrev) {
+//     while(num > 0){
+//         int digito = num % 10;
+//         reverso = reverso * 10 + digito;
+//         num /= 10;
+//     }
+
+//     if (reverso == n) {
 //         cout << n << " es un número palíndromo" << endl ;
 //     } else {
 //         cout << n << " NO es un número palíndromo" << endl;
 //     }
+
+//     cout << reverso << endl;
 
 //     return 0;
 // }

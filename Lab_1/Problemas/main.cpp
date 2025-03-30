@@ -226,37 +226,42 @@ using namespace std;
 
 
 /// PROBLEMA 12
+// int main(){
+//     int maxPrimo;
+//     int primo;
+//     int n;
+
+//     cout << "Ingrese un numero: ";
+//     cin >> n;
+
+//     primo = n;
+
+//     while(primo % 2 == 0) {
+//         maxPrimo = 2;
+//         primo /= 2;
+//     }
+
+
+//     for (int i = 3; i * i <= primo; i+= 2) {
+//         while (primo % i == 0) {
+//             maxPrimo = i;
+//             primo /= i;
+//         }
+//     }
+
+//     if(primo > 2)
+//     {
+//         maxPrimo = primo;
+//     }
+
+
+//     cout << "El mayor factor primo de " << n << " es: " << maxPrimo << endl;
+// }
+
+
+/// PROBLEMA 14
 int main(){
-    int maxPrimo;
-    int primo;
-    int n;
+    int maxPalindromo;
+    int n1, n2;
 
-    cout << "Ingrese un numero: ";
-    cin >> n;
-
-    primo = n;
-
-    while(primo % 2 == 0) {
-        maxPrimo = 2;
-        primo /= 2;
-    }
-
-
-    for (int i = 3; i * i <= primo; i+= 2) {
-        while (primo % i == 0) {
-            maxPrimo = i;
-            primo /= i;
-        }
-    }
-
-    if(primo > 2)
-    {
-        maxPrimo = primo;
-    }
-
-
-    cout << "El mayor factor primo de " << n << " es: " << maxPrimo << endl;
-
-    
 }
-
